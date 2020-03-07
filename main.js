@@ -1,8 +1,9 @@
-function teste(x){
-    let y = 2;
+const usuario = {
+    nome: 'Maria',
+    idade: 25,
+};
 
-    if(x > 5){
-        console.log(x,y);
-    }
-}
-teste(10);
+const {nome,...resto} = usuario;
+
+console.log(nome);
+console.log(resto);
